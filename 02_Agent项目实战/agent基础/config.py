@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 import os
 
 from langchain_community.utilities.tavily_search import TAVILY_API_URL
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
@@ -14,5 +15,7 @@ DASHSCOPE_API_KEY=os.getenv("DASHSCOPE_API_KEY")
 
 #模型
 CHAT_MODEL="qwen-turbo"
-
+llm=ChatOpenAI(model=CHAT_MODEL,
+                     api_key=ALIBL_API_KEY,
+                     base_url=ALIBL_BSUL)
 
