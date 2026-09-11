@@ -1,0 +1,41 @@
+# ========== 核心：敏感环境变量 ==========
+.env
+.env.local
+*.env
+.env.*.local
+ #
+ ## ========== Python 运行缓存 ==========
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+*.egg
+
+ ## ========== IDE 编辑器配置 ==========
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+ ## ========== 日志与临时文件 ==========
+*.log
+logs/
+tmp/
+temp/
+
+ ## ========== 系统文件 ==========
+.DS_Store
+Thumbs.db
+#运行时数据库文件
+*.db
+memory_db.db
+vector.db
+chroma_db
+#记忆
+memory
