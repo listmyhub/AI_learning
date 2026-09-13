@@ -37,5 +37,6 @@ Thumbs.db
 memory_db.db
 vector.db
 chroma_db
+chroma_bd
 #记忆
 memory
