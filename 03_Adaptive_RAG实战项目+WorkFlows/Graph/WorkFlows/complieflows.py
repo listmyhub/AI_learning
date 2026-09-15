@@ -43,6 +43,12 @@ workflows.add_conditional_edges("generate",grade_generation,{
 #编译工作流
 app=workflows.compile()
 
+#建立工作流流程图
+png_data=app.get_graph().draw_mermaid_png()
+with open("workflow_graph.png","wb") as f:
+    f.write(png_data)
+
+
 
 #测试
 if __name__=="__main__":
