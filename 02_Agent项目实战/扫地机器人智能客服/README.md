@@ -246,7 +246,7 @@ python -m Agent.react_agent
 
 | 文件 | 配置项 | 说明 |
 | --- | --- | --- |
-| `model.py` | `LLM` | 大模型：`qwen-turbo`，temperature=0.5 |
+| `generate_model.py` | `LLM` | 大模型：`qwen-turbo`，temperature=0.5 |
 | `RAG_chroma.py` | `EMBEDDING_MODEL` | 嵌入模型：`text-embedding-v4` |
 | `RAG_chroma.py` | `COLLECTION_NAME` | 向量集合名：`agent` |
 | `RAG_chroma.py` | `PERSIST_DIRECTORY` | 向量库目录：`output/chroma_bd` |
